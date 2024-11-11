@@ -1,6 +1,8 @@
 import Topbar from './components/Topbar'
 import Navbar from './components/Navbar'
 import './App.css'
+import Herosection from './components/Herosection'
+import ResourseCont from './components/ResourseCont'
 
 function App() {
   
@@ -9,6 +11,8 @@ function App() {
     <>
     <Topbar/>
     <Navbar/>
+    <Herosection/>
+    <ResourseCont/>
      
     </>
   )
