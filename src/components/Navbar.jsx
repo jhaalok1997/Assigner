@@ -3,12 +3,12 @@
 const Navbar = () => {
   return (
     <>
-      <div className="flex justify-start  space-x-24">
+      <div className="flex justify-start  space-x-32">
         <div>
             <img className="h-[120px] w-[249px] pl-[31px] " src="./logo.jpeg"/>
         </div>
-        <div classname="">
-        <div className="bg-[#F5F5F5] shadow-md shadow-slate-400 pl-6 relative top-7 ">
+        <div className="">
+        <div className="bg-[#F5F5F5]  shadow-md shadow-slate-400 pl-6 relative top-7 ">
             <ul className="flex space-x-16 p-4 ">
                 <li>Home</li>
                 <li>About Us</li>
