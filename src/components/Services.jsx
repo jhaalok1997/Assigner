@@ -104,11 +104,11 @@ const Services = () => {
                         let {Img,Heading,Star,Number} = items
                         return <div key={key} className="border-2 w-60 overflow-hidden bg-cover  rounded-lg shadow-md shadow-black  ">
                             <div className="">
-                            <img className="h-[200px] " src={Img}/>
+                            <img className="h-[200px] w-full " src={Img}/>
                             </div>
                            
                             <div className="text-start">
-                            <h4>{Heading}</h4>
+                            <h4 className="font-serif">{Heading}</h4>
                             <div className="flex pt-2 text-md">
                             <img src={Star}/>
                             <img src={Star}/>
