@@ -22,16 +22,20 @@ const Assitadvan = () => {
     ]
 
   return (
-    <section className="justify-center h-full">
+    <section className= "p-2">
+        <div className="relative">
+            <img className="rotate-180 size-28 absolute top-[280px] left-4" src="./Assects/OBJECTS (2).png" />
+        </div>
+        <div className="bg-white sm:bg-white md:bg-white lg:bg-white h-[400px] ">
     <div className="p-4 text-center">
         <h2 className="text-2xl font-serif font-semibold text-purple-900">Our Assistance's advantages</h2>
-        <p className="font-serif">The Assigner wants to build a strong foundation that will enable students to soar to achievement . </p>
+        <p className="font-serif text-sm">The Assigner wants to build a strong foundation that will enable students to soar to achievement . </p>
     </div>
-    <div className="grid sm: grid-cols-2   md:grid-cols-4 gap-9 text-center p-16 h-60 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2   md:grid-cols-3 lg:grid-cols-4  text-center gap-3 p-12 h-60 ">
         {
             objects.map((items, key) => {
                 let { Img, Heading, Para } = items
-                return <div key={key} className=" md: h-[187px] w-[270px] bg-[#EE481447] border-2 justify-items-center p-6 rounded-md shadow-md shadow-slate-500 space-y-1">
+                return <div key={key} className=" mx-auto h-[187px] w-[270px] bg-[#EE481447] border-2 justify-items-center p-3 rounded-md shadow-md shadow-slate-500 space-y-1">
                     <img className="h-12 " src={Img} />
                     <h2>{Heading}</h2>
                     <p className="text-xs">{Para}</p>
@@ -40,6 +44,11 @@ const Assitadvan = () => {
         }
        
     </div>
+    </div>
+    <div className="relative">
+    <img className="md:absolute right-2 bottom-36  " src="./Assects/OBJECTS (3).png" />
+    </div>
+    
 </section>
   )
 }

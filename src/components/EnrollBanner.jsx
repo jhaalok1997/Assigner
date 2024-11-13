@@ -3,7 +3,7 @@
 const EnrollBanner = () => {
     return (
         <div>
-            <div className="relative ">
+             <div className="relative ">
                 <img className="rounded-md h-[639px] opacity-30" src="./backgroundImage.png" />
                 <div className="absolute top-56 right-[7%]">
                     <img className="h-[409px] opacity-60" src="./Group 1984.png" />

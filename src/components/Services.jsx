@@ -91,25 +91,25 @@ const Services = () => {
     ]
 
   return (
-    <section className="p-8">
-        <div className="bg-purple-200 w-full h-full rounded-md">
+    <section className=" p-6 ">
+        <div className="bg-purple-200 w-full h-full rounded-md justify-center">
             <div className="text-center p-5">
                 <h1 className="text-2xl font-semibold font-serif">Our Services</h1>
                 <p className="font-serif">We offer some fantastic services</p>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-10 text-center p-24 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4 gap-10     ">
                 {
                     Objects.map((items,key) => {
                         let {Img,Heading,Star,Number} = items
-                        return <div key={key} className="border-2 w-60 overflow-hidden bg-cover  rounded-lg shadow-md shadow-black  ">
+                        return <div key={key} className="mx-auto border-2 h-[260px] w-[200px] overflow-hidden bg-cover  rounded-lg shadow-md shadow-black  ">
                             <div className="">
-                            <img className="h-[200px] w-full " src={Img}/>
+                            <img className="h-[180px] w-full  " src={Img}/>
                             </div>
                            
                             <div className="text-start">
                             <h4 className="font-serif">{Heading}</h4>
-                            <div className="flex pt-2 text-md">
+                            <div className="flex pt-2 size-7">
                             <img src={Star}/>
                             <img src={Star}/>
                             <img src={Star}/>

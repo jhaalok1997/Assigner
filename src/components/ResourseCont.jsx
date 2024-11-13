@@ -5,7 +5,9 @@ import { FaRegUser } from "react-icons/fa";
 const ResourseCont = () => {
     return (
         <section>
+              <img className="absolute bottom-12" src="./Assects/OBJECTS (1).png"/>
             <div className="h-[387px] p-10">
+              
                 <div className=" p-5 shadow-lg shadow-slate-400 justify-center ">
                     <h1 className="font-serif text-[48px] text-center">700+ students saved, and counting</h1>
                     <div className="">
@@ -31,6 +33,7 @@ const ResourseCont = () => {
 
 
             </div>
+            <img className="absolute right-1 top-[930px] size-24" src="./Assects/OBJECTS (2).png"/>
         </section>
     )
 }

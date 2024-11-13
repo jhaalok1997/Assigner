@@ -4,8 +4,8 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-start  space-x-32">
-        <div>
-            <img className="h-[120px] w-[249px] pl-[31px] " src="./logo.jpeg"/>
+        <div clasName="flex items-center">
+            <img className="sm:h-16 w-auto md:h-[120px] w-[249px] pl-[31px] " src="./logo.jpeg"/>
         </div>
         <div className="">
         <div className="bg-[#F5F5F5]  shadow-md shadow-slate-400 pl-6 relative top-7 ">
@@ -28,3 +28,9 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
+// h-[120px] w-[249px] pl-[31px]

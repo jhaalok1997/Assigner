@@ -30,21 +30,21 @@ const Faq = () => {
     ]
 
     return (
-        <section>
+        <section className="h-full w-full ">
             <div className="text-center pt-16">
                 <h1 className="text-3xl">FAQs</h1>
             </div>
-            <div className="p-16">
+            <div className="p-4 md:p-10 ">
                 {
                     Objects.map((items, key) => {
                         return <div key={key} className=" grid gap-0.5 rounded-md  ">
-                            <span className="ml-auto cursor-pointer relative top-12 ">{<FaAngleDown onClick={() => setShow(!show)} />}</span>
+                            <span className="ml-auto cursor-pointer relative top-10 right-6 ">{<FaAngleDown onClick={() => setShow(!show)} />}</span>
                             <p className=" shadow-md shadow-slate-500 border-4 border-white flex p-3 ">{items.Ques}</p>
 
                             {show && <p className="pb-2 bg-slate-200">{items.Ans} </p>}
-                           
+
                         </div>
-                           
+
                     })
                 }
 

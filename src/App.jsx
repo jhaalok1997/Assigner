@@ -20,12 +20,12 @@ function App() {
         <Navbar />
         <Herosection />
         <ResourseCont />
-        <EnrollBanner/>
-        <Features/>
-        <Services/>
-        <Assitadvan/>
-        <Faq/>
-        <Footer/>
+        <EnrollBanner />
+        <Features />
+        <Services />
+        <Assitadvan />
+        <Faq />
+        <Footer />
       </div>
     </>
   )
