@@ -3,7 +3,11 @@ import { FaAngleDown } from "react-icons/fa";
 
 const Faq = () => {
 
-    const [show, setShow] = useState(false)
+    const [show, setShow] = useState(null)
+
+    const handleClick = (key) => {
+        setShow(show === key ? null : key)
+    }
 
     const Objects = [
         {
@@ -38,10 +42,13 @@ const Faq = () => {
                 {
                     Objects.map((items, key) => {
                         return <div key={key} className=" grid gap-0.5 rounded-md  ">
-                            <span className="ml-auto cursor-pointer relative top-10 right-6 ">{<FaAngleDown onClick={() => setShow(!show)} />}</span>
+
+                            <span className="ml-auto cursor-pointer relative top-10 right-6" onClick={() => handleClick(key)} ><FaAngleDown className={show === key ? 'transform rotate-180' : ''} /></span>
+
                             <p className=" shadow-md shadow-slate-500 border-4 border-white flex p-3 ">{items.Ques}</p>
 
-                            {show && <p className="pb-2 bg-slate-200">{items.Ans} </p>}
+                            {show === key && (<p className="pb-2 bg-slate-200">{items.Ans} </p>
+                        )}
 
                         </div>
 

@@ -1,29 +1,52 @@
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 const Navbar = () => {
+
+   const[open,setOpen] = useState(false)
+
+   const handleMenu = () => {
+    setOpen(!open)
+   }
+
+
   return (
     <>
-      <div className="flex justify-start  space-x-32">
-        <div clasName="flex items-center">
-            <img className="sm:h-16 w-auto md:h-[120px] w-[249px] pl-[31px] " src="./logo.jpeg"/>
-        </div>
-        <div className="">
-        <div className="bg-[#F5F5F5]  shadow-md shadow-slate-400 pl-6 relative top-7 ">
-            <ul className="flex space-x-16 p-4 ">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Blog</li>
+    <div className="flex flex-wrap justify-between items-center p-4 bg-[#F5F5F5] shadow-md shadow-slate-400"> 
+      <div className="flex items-center"> 
+        <img className="h-20 w-auto" src="./logo.jpeg" alt="Logo" /> 
+        </div> 
+        <div className="hidden lg:flex space-x-8">
+           <ul className="flex space-x-8 bg-slate-200 p-4 rounded-md">
+             <li>Home</li>
+              <li>About Us</li>
+               <li>Blog</li>
                 <li>Our Services</li>
-                <li>ILETS & PTE</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-        </div>
-        <div className="relative top-4 p-4">
-            <button className="bg-slate-600  w-[139.6px] h-[40.24px] rounded-[4.72px] text-white">Login</button>
-        </div>
-      </div>
-    </>
+                 <li>ILETS & PTE</li>
+                  <li>Contact Us</li> 
+                  </ul> </div>
+                   <div className="flex items-center">
+                     <button className="bg-slate-600 w-32 h-10 rounded text-white ">Login</button>
+                      </div> 
+                      <div className="block lg:hidden"> 
+                        <a className="text-xl cursor-pointer" onClick={handleMenu}><GiHamburgerMenu /></a>
+                         </div>
+    </div>
+            {open &&
+               ( <div className="lg:hidden bg-[#F5F5F5] shadow-md shadow-slate-400 p-4">
+               <ul className="space-y-4 ">
+                  <li>Home</li> 
+                  <li>About Us</li> 
+                  <li>Blog</li> 
+                  <li>Our Services</li> 
+                  <li>ILETS & PTE</li> 
+                  <li>Contact Us</li>
+                   </ul> 
+                   </div>
+               )}
+
+       </>
+  
   )
 }
 
@@ -31,6 +54,3 @@ export default Navbar
 
 
 
-
-
-// h-[120px] w-[249px] pl-[31px]
