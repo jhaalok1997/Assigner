@@ -29,7 +29,7 @@ const Features = () => {
         <>
             <section className="justify-center">
                 <div className="p-4 text-center">
-                    <h2 className="text-2xl font-sans font-semibold text-purple-900">Awesome Features</h2>
+                    <h2 className="text-2xl font-sans font-semibold text-[#201041]">Awesome Features</h2>
                     <p className="">Get ready to unlock the next level of features</p>
                 </div>
                 <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-10 text-center p-12  ">
@@ -38,8 +38,8 @@ const Features = () => {
                             let { Img, Heading, Para } = items
                             return <div key={key} className="h-[187px] w-[270px] border-2 justify-items-center p-6 rounded-md shadow-lg shadow-black space-y-1 mx-auto">
                                 <img className="h-12  " src={Img} />
-                                <h2>{Heading}</h2>
-                                <p className="text-xs">{Para}</p>
+                                <h2 className="text-title">{Heading}</h2>
+                                <p className="text-xs text-title">{Para}</p>
                             </div>
                         })
                     }

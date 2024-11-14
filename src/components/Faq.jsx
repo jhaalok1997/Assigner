@@ -35,8 +35,8 @@ const Faq = () => {
 
     return (
         <section className="h-full w-full ">
-            <div className="text-center pt-16">
-                <h1 className="text-3xl">FAQs</h1>
+            <div className="pt-[580px] sm:pt-40 md:pt-16 text-center">
+                <h1 className="text-3xl text-title">FAQs</h1>
             </div>
             <div className="p-4 md:p-10 ">
                 {
@@ -45,9 +45,9 @@ const Faq = () => {
 
                             <span className="ml-auto cursor-pointer relative top-10 right-6" onClick={() => handleClick(key)} ><FaAngleDown className={show === key ? 'transform rotate-180' : ''} /></span>
 
-                            <p className=" shadow-md shadow-slate-500 border-4 border-white flex p-3 ">{items.Ques}</p>
+                            <p className=" shadow-md shadow-slate-500 border-4 border-white flex p-3 text-title ">{items.Ques}</p>
 
-                            {show === key && (<p className="pb-2 bg-slate-200">{items.Ans} </p>
+                            {show === key && (<p className="p-2 bg-slate-200 rounded-lg ">{items.Ans} </p>
                         )}
 
                         </div>
